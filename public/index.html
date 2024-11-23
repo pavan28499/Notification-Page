@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notification page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-[#dde7ee]">
+    <main>
+      <section
+        class="flex justify-center items-center max-container w-full h-auto lg:h-screen"
+      >
+        <div
+          class="rounded-lg max-w-[700px] h-auto flex flex-col justify-start items-start p-4 lg:px-6 bg-white"
+        >
+          <div class="flex justify-between items-start w-full h-auto">
+            <div class="flex justify-center items-center gap-2">
+              <h1 class="font-bold text-2xl text-center">Notifications</h1>
+              <p
+                id="number-el"
+                class="px-3 py-0 rounded-[5px] text-center bg-blue-500 text-white font-bold"
+              >
+                3
+              </p>
+            </div>
+            <p id="read-el" class="cursor-pointer">Mark all as read</p>
+          </div>
+          <div
+            id="mark-el"
+            class="flex justify-start items-start w-full bg-[#e5effa] p-3 rounded-lg mt-6 cursor-pointer"
+          >
+            <div class="flex justify-center items-center gap-3">
+              <img
+                src="./images/avatar-mark-webber.webp"
+                alt="pro pic"
+                class="w-[45px]"
+              />
+              <div>
+                <p>
+                  <span class="font-bold cursor-pointer">Mark Webber </span
+                  >reacted to your recent post
+                  <span class="text-[#1c202b] font-bold"
+                    >My first tournament today!</span
+                  >
+                  <span
+                    id="red-el-one"
+                    class="w-2 h-2 rounded-full bg-[#f65351] inline-block"
+                  ></span>
+                </p>
+                <p class="leading-5">1m ago</p>
+              </div>
+            </div>
+          </div>
+          <div
+            id="angela-el"
+            class="flex justify-start items-start w-full bg-[#e5effa] p-3 rounded-lg mt-2 cursor-pointer"
+          >
+            <div class="flex justify-center items-center gap-3">
+              <img
+                src="./images/avatar-angela-gray.webp"
+                alt="pro pic"
+                class="w-[45px]"
+              />
+              <div>
+                <p>
+                  <span class="font-bold">Angela Gray </span>followed you
+                  <span
+                    id="red-el-two"
+                    class="w-2 h-2 rounded-full bg-[#f65351] inline-block"
+                  ></span>
+                </p>
+                <p class="leading-5">5m ago</p>
+              </div>
+            </div>
+          </div>
+          <div
+            id="jacob-el"
+            class="flex justify-start items-start w-full bg-[#e5effa] p-3 rounded-lg mt-2 cursor-pointer"
+          >
+            <div class="flex justify-center items-center gap-3">
+              <img
+                src="./images/avatar-jacob-thompson.webp"
+                alt="pro pic"
+                class="w-[45px]"
+              />
+              <div>
+                <p>
+                  <span class="font-bold">Jacob Thompson </span>has joined your
+                  group
+                  <span class="text-[#1c202b] font-bold">Chess Club</span>
+                  <span
+                    id="red-el-three"
+                    class="w-2 h-2 rounded-full bg-[#f65351] inline-block"
+                  ></span>
+                </p>
+                <p class="leading-5">1 day ago</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex justify-start items-start w-full p-3 rounded-lg mt-2"
+          >
+            <div class="flex items-start justify-start gap-3">
+              <img
+                src="./images/avatar-rizky-hasanuddin.webp"
+                alt="pro pic"
+                class="w-[45px]"
+              />
+              <div class="flex flex-col">
+                <div class="flex justify-start items-start gap-2">
+                  <p>
+                    <span class="font-bold">Rizky Hasanuddin </span>sent you a
+                    private message
+                  </p>
+                </div>
+                <p class="leading-5">5 day ago</p>
+                <p class="max-w-[500px] p-3 border-2 mt-2">
+                  Hello, thanks for setting up the Chess Club. I've been a
+                  member for a few weeks now and I'm already having lots of fun
+                  and improving my game.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex justify-start items-start w-full p-3 rounded-lg mt-2"
+          >
+            <div class="flex justify-between w-full">
+              <div class="flex justify-center items-center gap-3">
+                <img
+                  src="./images/avatar-kimberly-smith.webp"
+                  alt="pro pic"
+                  class="w-[45px]"
+                />
+                <div class="flex flex-col">
+                  <div class="flex justify-center items-center gap-2">
+                    <p>
+                      <span class="font-bold">Kimberly Smith </span>commented on
+                      your picture
+                    </p>
+                  </div>
+                  <p class="leading-5">1 week ago</p>
+                </div>
+              </div>
+              <img src="./images/image-chess.webp" alt="" class="w-[40px]" />
+            </div>
+          </div>
+          <div
+            class="flex justify-start items-start w-full p-3 rounded-lg mt-2"
+          >
+            <div class="flex justify-center items-center gap-3">
+              <img
+                src="./images/avatar-nathan-peterson.webp"
+                alt="pro pic"
+                class="w-[45px]"
+              />
+              <div class="flex flex-col">
+                <div class="flex justify-center items-center gap-2">
+                  <p>
+                    <span class="font-bold">Nathan Peterson </span>reacted to
+                    your recent post
+                    <span class="text-[#1c202b] font-bold"
+                      >5 end-game strategies to increase your win rate</span
+                    >
+                  </p>
+                </div>
+                <p class="leading-5">2 weeks ago</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex justify-start items-start w-full p-3 rounded-lg mt-2"
+          >
+            <div class="flex justify-center items-center gap-3">
+              <img
+                src="./images/avatar-anna-kim.webp"
+                alt="pro pic"
+                class="w-[45px]"
+              />
+              <div class="flex flex-col">
+                <div class="flex justify-center items-center gap-2">
+                  <p>
+                    <span class="font-bold">Anna Kim </span>left the group
+                    <span class="text-[#1c202b] font-bold">Chess Club</span>
+                  </p>
+                </div>
+                <p class="leading-5">2 weeks ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
